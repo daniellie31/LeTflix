@@ -5,6 +5,9 @@
 }
 
 header{
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,29 +60,17 @@ header{
     filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
 }
 
-.subscribe-now{
-    align-items: center;
-}
-
-.upper-content-background{
-    height: 420px;
+.upper-content{
+    height: 400px;
     background: url('../assets/chicago.png');
     background-repeat: no-repeat;
     background-size: cover;
-    /* filter: blur(8px); */
-    position: absolute;
-    opacity: 90%;
-    left: 0;
-    right: 0;
 }
 
 .benefit-container{
-    width: 600px;
+    width: 410px;
     margin: 66px 724px 66px 114px;
     display: inline-block;
-    position: relative;
-    left: 0;
-    right: 0;
 }
 
 .benefit-container h1{
@@ -88,10 +79,10 @@ header{
 }
 
 .benefit-container p{
-    font-size: 18px;
+    font-size: 14px;
     color: #FFFFFF;
-    font-weight: bold;
     margin-bottom: 35px;
+    text-align: justify;
 }
 
 .benefit-container a{
@@ -106,6 +97,13 @@ header{
     line-height: 50px;
     border-radius: 10px;
     font-size: 18px;
+    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25)); */
+    transition: transform 0.2s;
+}
+
+.benefit-container a:hover{
+    background-color: #ffab04;
+    transform: scale(1.1);
 }
 
 .lower-content{
@@ -119,22 +117,35 @@ header{
 }
 
 .movie-container h4{
+    padding-left: 10px;
     color: #EF6E72;
+    text-align: left;
 }
 
 .content-container{
     text-align: center;
+    /* width: 100%; */
 }
 
 .movie-pict{
     display: flex;
     justify-content:space-evenly;
     margin-top: 20px;
+    
 }
 
 .movie-pict img{
     margin-left: 10px;
     margin-right: 10px;
+    width: 270px;
+    height: 160px;
+    transition: transform .2s;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie-pict img:hover{
+    transform: scale(1.1);
 }
 
 footer{
@@ -167,5 +178,26 @@ footer p{
     width: 30px;
     height: 30px;
 }
+
+/* TABLET */
+@media all and (max-width: 670px){
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        
+    }
+    .footer-left{
+        margin: 0;
+    }
+    footer p{
+        margin: 10px 0;
+    }
+    .footer-right{
+        margin:0;
+    }
+}
+
+
 
 
