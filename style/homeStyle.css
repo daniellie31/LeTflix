@@ -66,11 +66,11 @@ header{
     background: url('../assets/chicago.png');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(8px);
+    /* filter: blur(8px); */
     position: absolute;
+    opacity: 90%;
     left: 0;
     right: 0;
-
 }
 
 .benefit-container{
@@ -167,3 +167,5 @@ footer p{
     width: 30px;
     height: 30px;
 }
+
+
