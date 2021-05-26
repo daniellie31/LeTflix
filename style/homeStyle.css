@@ -179,23 +179,69 @@ footer p{
     height: 30px;
 }
 
-/* TABLET */
+/* HP */
 @media all and (max-width: 670px){
+    .benefit-container{
+        margin: 70px 30px;
+    }
+
+    .benefit-container a{
+        width: 100%;
+    }
+
+    .movie-container{
+        margin-top: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        /* width: 100%; */
+        /* background-color: red; */
+    }
+
+    #mc-kedua{
+        padding-top: 5px;
+    }
+
+    .movie-container h4{
+        text-align: center;
+    }
+
+    .movie-pict{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .movie-pict img{
+        margin: 5px 0;
+    }
+
+    .lower-content{
+        height: auto;
+    }
+
     footer{
         flex-direction: column;
         height: auto;
         padding: 20px 0;
-        
     }
-    .footer-left{
+
+    .header-right{
+        display: none;
+    }
+
+    .footer-left, .header-left{
         margin: 0;
     }
+
     footer p{
         margin: 10px 0;
     }
+
     .footer-right{
         margin:0;
     }
+
 }
 
 
