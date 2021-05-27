@@ -167,15 +167,6 @@ header{
     color: #787C87;
 }
 
-.email-container label{
-    margin-bottom: 5px;
-}
-
-.password-container label{
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
 .gender{
     display: flex;
     width: 100%;
