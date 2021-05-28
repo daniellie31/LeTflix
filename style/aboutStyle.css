@@ -150,6 +150,7 @@ header{
     align-items: center;
     border-radius: 40px;
     transition: transform .2s;
+    box-shadow: 4px 4px black;
 }
 
 .single-member:hover{
