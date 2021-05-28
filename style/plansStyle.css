@@ -76,9 +76,13 @@ header{
     margin-top: 50px;
 }
 
+.upper-content h3{
+    font-size: 24px;
+}
+
 .upper-content p{
     margin-top: 10px;
-    font-size: 11.5px;
+    font-size: 14px;
 }
 
 .lower-content{
@@ -143,14 +147,39 @@ header{
 
 .silver{
     background-color: #f2bf57;
+    transition: transform .2s;
+    box-shadow: 3px 3px black;
+}
+
+.silver:hover{
+    background-color: #f7b634;
+    transform: scale(1.05);
 }
 
 .gold{
     background-color: #e5c0c0;
+    transition: transform .2s;
+    box-shadow: 3px 3px black;
+}
+
+.gold:hover{
+    background-color: #e7adad;
+    transform: scale(1.05);
 }
 
 .diamond{
     background-color: #ef6e72;
+    transition: transform .2s;
+    box-shadow: 3px 3px black;
+}
+
+.diamond:hover{
+    background-color: #f5575c;
+    transform: scale(1.05);
+}
+
+.choose-plan:hover{
+    background-color: #242830;
 }
 
 footer{
