@@ -91,7 +91,7 @@ header{
     justify-content: center;
 }
 
-.right-container h1, .left-content h1, .our-teams-container h1{
+.right-container h1, .left-content h1, .our-teams-container h1, .company-culture h1{
     color: #EF6E72;
 }
 
@@ -167,4 +167,72 @@ header{
 .single-member h4{
     font-weight: bold;
     color: #FFFFFF;
+}
+
+.company-culture{
+    background-color: #242830;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.company-culture h1{
+    /* background-color: white; */
+    text-align: end;
+    /* padding-right: 120px; */
+    margin: 0 140px;
+}
+
+.culture-content{
+    /* background-color: #F2BF57; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    /* height: 1400px; */
+}
+
+.left-culture{
+    /* background-color: red; */
+    width: 50%;
+    height: 380px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 10px; */
+}
+
+.left-culture-content{
+    /* background-color: #EF6E72; */
+    width: 460px;
+    color: #FFFFFF;
+}
+
+.left-culture-content p{
+    font-weight: normal;
+}
+
+.left-culture-content li{
+    font-weight: bold;
+}
+
+.list-content{
+    margin: 20px 0;
+}
+
+.right-culture{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+
+}
+
+.right-culture img{
+    /* background-color: #EF6E72; */
+    width: 500px;
+    height: 400px;
 }
