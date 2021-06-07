@@ -27,8 +27,6 @@ function validateEmail(){
 var errPassword = document.getElementById("error-password")
 function validatePassword(){
     var password = document.getElementById('password').value;
-    var letter = /[a-zA-Z]/;
-    var number = /[0-9]/;
     if(password == ''){
         errPassword.innerHTML = 'Please input your password !';
         return false;
@@ -41,12 +39,30 @@ function validatePassword(){
         errPassword.innerHTML = 'Password length must not exceed 16 characters !';
         return false;
     }
-    else if(!letter.test(password) || !number.test(password)){
+    else if(!isAlphaNum(password) ){
         errPassword.innerHTML = 'Password must be contain at least one character and one number!';
-        return false;
+        return false; 
     }
     errPassword.innerHTML = '';
     return true;
+}
+
+function isAlphaNum(password){
+    var letter = 0;
+    var number = 0;
+    for (var i = 0; i < password.length; i++) {
+        var c = password.charAt(i);
+        if(c >= 'a' && c <='z'){
+            letter = 1;
+        }
+        else if(c >= '0' && c <='9'){
+            number = 1;
+        }
+    }
+    if(letter==1 && number==1){
+        return true;
+    }
+    else return false;
 }
 
 var errGender = document.getElementById('error-gender');
