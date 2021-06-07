@@ -87,13 +87,19 @@ header{
 }
 
 .drama-list{
-    color: #FFFFFF;
+    color: #EF6E72;
     font-weight: bold;
 }
 
 .drama-list:hover{
     cursor: pointer;
     background-color: #242830;
+    color: #FFFFFF;
+}
+
+.header-right .nav-about{
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .header-right .nav-login, .header-right .nav-register{
