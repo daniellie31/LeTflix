@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscription - LeTflix</title>
+    <title>Subscription - LetFlix</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/subscriptionStyle.css">
     <link rel="shortcut icon" href="./assets/logo.png">
-    <script src="./script/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -18,13 +18,22 @@
             <h1>LeTflix</h1>
         </div>
         <div class="header-right">
-            <a class="nav-home" href="homePage.html">Home</a>
-            <a class="nav-dramas" href="dramasPage.html">Dramas</a>
-            <a class="nav-plans" href="plansPage.html">Plans</a>
-            <a class="nav-about" href="aboutPage.html">About</a>
-            <a class="nav-subscription" href="#">Subscription</a>
-            <a class="nav-login" href="#" class="login">Login</a>
-            <a class="nav-register" href="#" class="register">Register</a>
+            <ul>
+                <li><a class="nav-home" href="homePage.html">Home</a></li>
+                <li class="drama-list">
+                    Dramas
+                    <ul>
+                        <li><a class="nav-dramas" href="dramasPage.html">Latest Dramas</a></li>
+                        <li><a class="nav-dramas" href="dramasPage.html">Chinese Dramas</a></li>
+                        <li><a class="nav-dramas" href="dramasPage.html">Korean Dramas</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-plans" href="plansPage.html">Plans</a></li>
+                <li><a class="nav-about" href="aboutPage.html">About</a></li>
+                <li><a class="nav-subscription" href="subscriptionPage.html">Subscription</a></li>
+                <li><a class="nav-login" href="#" class="login">Login</a></li>
+                <li><a class="nav-register" href="#" class="register">Register</a></li>
+            </ul>
         </div>
     </header>
 
