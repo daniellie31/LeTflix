@@ -102,6 +102,7 @@ header{
     background-color: #303542;
     display: flex;
     justify-content: center;
+    /* background-color: green; */
 }
 
 .subscribe-now{
@@ -116,7 +117,6 @@ header{
     line-height: 50px;
     border-radius: 30px;
     font-size: 18px;
-    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25)); */
     transition: transform 0.2s;
     margin-top: 20px;
     box-shadow: 3px 3px black;
@@ -124,6 +124,15 @@ header{
 
 .subscribe-now:hover{
     background-color: #F2BF57;
+    cursor: pointer;
+}
+
+#error-email, #error-password, #error-gender, #error-plan, #error-agreement{
+    color: #F2BF57;
+    font-weight: normal;
+    font-size: 12px;
+    /* background-color: #EF6E72; */
+    width: 100%;
 }
 
 .form-title{
@@ -131,6 +140,7 @@ header{
     margin: 80px 0 50px 0;
     width: 300px;
     color: #EF6E72;
+    /* background-color: #303542; */
 }
 
 .form-title h2{
@@ -147,7 +157,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    
+    /* background-color: red; */
+    width: 300px;
 }
 
 .email-container, .password-container{
@@ -188,6 +199,7 @@ header{
 .gender{
     display: flex;
     width: 100%;
+    /* background-color: red; */
 }
 
 .gender .male, .female{
@@ -196,6 +208,7 @@ header{
 
 select{
     width: 100%;
+    margin: 10px 0;
 }
 
 .tnc{

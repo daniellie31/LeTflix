@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/subscriptionStyle.css">
     <link rel="shortcut icon" href="./assets/logo.png">
+    <script src="./script/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,41 +36,47 @@
             <img class="colorful-box" src="./assets/colorful-box.png" alt="">
         </div>
         <div class="right-container">
-            <form action="">
+            <form action="" id="form">
                 <div class="form-title">
                     <h2>Join Us!</h2>
                     <p>Start your free 30-days trial</p>
                 </div>
                 <div class="form-content">
+                    <div id="error-email"></div>
                     <div class="email-container">
                         <img src="./assets/envelope-solid.svg" alt="">
-                        <input type="text" class="email" name="email" placeholder="Email address">
+                        <input id="email" type="text" class="email" name="email" placeholder="Email address">
                     </div>
+                    <div id="error-password"></div>
                     <div class="password-container">
                         <img src="./assets/unlock-solid.svg" alt="">
-                        <input type="password" class="password" name="password" placeholder="Password">
+                        <input type="password" class="password" id="password" name="password" placeholder="Password">
                     </div>
+                    <div id="error-gender"></div>
                     <div class="gender">
                         <div class="male">
-                            <input type="radio" value="male">
+                            <input type="radio" name="gender" id="male">
                             <label for="male">Male</label>
                         </div>
                         <div class="female">
-                            <input type="radio" value="female">
+                            <input type="radio" name="gender" id="female">
                             <label for="female">Female</label>
                         </div>
                     </div>
+                    <div id="error-plan"></div>
                     <select name="plan" id="plan">
                         <option value="">Choose plan...</option>
                         <option value="silver">Silver</option>
                         <option value="gold">Gold</option>
                         <option value="diamond">Diamond</option> 
                     </select>
+                    <div id="error-agreement"></div>
                     <div class="tnc">
                         <input type="checkbox" name="cek" id="cek">
                         <label for="cek">Agree with term &amp; conditions</label>
                     </div>
-                    <a href="#" class="subscribe-now">Subscribe Now</a>
+                    <!-- <a href="#" class="subscribe-now">Subscribe Now</a> -->
+                    <input class="subscribe-now" type="button" value="Submit" onclick="runAllFunction()">
                 </div>
             </form>
         </div>

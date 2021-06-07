@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/homeStyle.css">
     <link rel="shortcut icon" href="./assets/logo.png">
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/script.js"></script>
 </head>
 <body>
     <header>
@@ -44,19 +46,24 @@
                 <h4>Latest Dramas</h4>
                 <div class="movie-pict">
                     <!-- <img class="test" src="./assets/chicago.png" alt=""> -->
-                    <img src="./assets/courtlady.jpg" alt="">
-                    <img src="./assets/lovescenery.jpg" alt="">
-                    <img src="./assets/dimples.jpg" alt="">
-                    <img src="./assets/mrgu.png" alt="">
+                    <button id="previous"><img id="prev-movie" src="./assets/prev.png" alt=""></button>
+                    <img class="image" src="./assets/courtlady.jpg" alt="">
+                    <img class="image" src="./assets/lovescenery.jpg" alt="">
+                    <img class="image" src="./assets/dimples.jpg" alt="">
+                    <img class="image" src="./assets/mrgu.png" alt="">
+                    <button id="next"><img id="next-movie" src="./assets/next.png" alt=""></button>
                 </div>
             </div>
             <div class="movie-container kedua" id="mc-kedua">
                 <h4>Action Sci-Fi</h4>
                 <div class="movie-pict">
-                    <img src="./assets/madmax.jpg" alt="">
-                    <img src="./assets/alita.jpg" alt="">
-                    <img src="./assets/mazerunner.jpg" alt="">
-                    <img src="./assets/oblivion.jpg" alt="">
+                    <button id="previous"><img id="prev-movie" src="./assets/prev.png" alt=""></button>
+                    <img class="image" src="./assets/madmax.jpg" alt="">
+                    <img class="image" src="./assets/alita.jpg" alt="">
+                    <img class="image" src="./assets/mazerunner.jpg" alt="">
+                    <img class="image" src="./assets/oblivion.jpg" alt="">
+                    <button id="next"><img id="next-movie" src="./assets/next.png" alt=""></button>
+                    <h1 id="counter"></h1>
                 </div>
             </div>
         </div>
