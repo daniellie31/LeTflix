@@ -100,135 +100,135 @@ function validateAgreement(){
     return true;
 }
 
-$(document).ready(function(){
-    let len = $('.image').length;
-    let counter = $('#counter');
-    let index = 0;
-    let image = $('.image');
+// $(document).ready(function(){
+//     let len = $('.image').length;
+//     let counter = $('#counter');
+//     let index = 0;
+//     let image = $('.image');
 
-    counter.html(0);
-    image.hide();
-    image.eq(index).show();
+//     counter.html(0);
+//     image.hide();
+//     image.eq(index).show();
 
-    $('#previous').click(function(){
-        image.eq(index).animate(
-            {
-                left : '-100px',
-                opacity: 0
-            },
-            function(){
-                image.eq(index).hide();
-                if(index == 0){
-                    index = len - 1;
-                }
-                else{
-                    index = index - 1;
-                }
-                image.eq(index).show();
-                image.eq(index).css('left', '100px');
-                image.eq(index).animate(
-                    {
-                        left : 0,
-                        opacity: 1
-                    }
-                )
-                counter.html(index);
-            }
-        );
+//     $('#previous').click(function(){
+//         image.eq(index).animate(
+//             {
+//                 left : '-100px',
+//                 opacity: 0
+//             },
+//             function(){
+//                 image.eq(index).hide();
+//                 if(index == 0){
+//                     index = len - 1;
+//                 }
+//                 else{
+//                     index = index - 1;
+//                 }
+//                 image.eq(index).show();
+//                 image.eq(index).css('left', '100px');
+//                 image.eq(index).animate(
+//                     {
+//                         left : 0,
+//                         opacity: 1
+//                     }
+//                 )
+//                 counter.html(index);
+//             }
+//         );
 
-    })
+//     })
 
-    $('#next').click(function(){
-        image.eq(index).animate(
-            {
-                left : '100px',
-                opacity: 0
-            },
-            function(){
-                image.eq(index).hide();
-                if(index == len - 1){
-                    index = 0;
-                }
-                else{
-                    index = index + 1;
-                }
-                image.eq(index).show();
-                image.eq(index).css('left', '-100px');
-                image.eq(index).animate(
-                    {
-                        left : 0,
-                        opacity: 1
-                    }
-                )
-                counter.html(index);
-            }
-        );
-    })
-});
+//     $('#next').click(function(){
+//         image.eq(index).animate(
+//             {
+//                 left : '100px',
+//                 opacity: 0
+//             },
+//             function(){
+//                 image.eq(index).hide();
+//                 if(index == len - 1){
+//                     index = 0;
+//                 }
+//                 else{
+//                     index = index + 1;
+//                 }
+//                 image.eq(index).show();
+//                 image.eq(index).css('left', '-100px');
+//                 image.eq(index).animate(
+//                     {
+//                         left : 0,
+//                         opacity: 1
+//                     }
+//                 )
+//                 counter.html(index);
+//             }
+//         );
+//     })
+// });
 
 
-$(document).ready(function(){
-    let len = $('.image1').length;
-    let counter = $('#counter');
-    let index = 0;
-    let image = $('.image1');
+// $(document).ready(function(){
+//     let len = $('.image1').length;
+//     let counter = $('#counter');
+//     let index = 0;
+//     let image = $('.image1');
 
-    counter.html(0);
-    image.hide();
-    image.eq(index).show();
+//     counter.html(0);
+//     image.hide();
+//     image.eq(index).show();
 
-    $('#previous1').click(function(){
-        image.eq(index).animate(
-            {
-                left : '-100px',
-                opacity: 0
-            },
-            function(){
-                image.eq(index).hide();
-                if(index == 0){
-                    index = len - 1;
-                }
-                else{
-                    index = index - 1;
-                }
-                image.eq(index).show();
-                image.eq(index).css('left', '100px');
-                image.eq(index).animate(
-                    {
-                        left : 0,
-                        opacity: 1
-                    }
-                )
-                counter.html(index);
-            }
-        );
+//     $('#previous1').click(function(){
+//         image.eq(index).animate(
+//             {
+//                 left : '-100px',
+//                 opacity: 0
+//             },
+//             function(){
+//                 image.eq(index).hide();
+//                 if(index == 0){
+//                     index = len - 1;
+//                 }
+//                 else{
+//                     index = index - 1;
+//                 }
+//                 image.eq(index).show();
+//                 image.eq(index).css('left', '100px');
+//                 image.eq(index).animate(
+//                     {
+//                         left : 0,
+//                         opacity: 1
+//                     }
+//                 )
+//                 counter.html(index);
+//             }
+//         );
 
-    })
+//     })
 
-    $('#next1').click(function(){
-        image.eq(index).animate(
-            {
-                left : '100px',
-                opacity: 0
-            },
-            function(){
-                image.eq(index).hide();
-                if(index == len - 1){
-                    index = 0;
-                }
-                else{
-                    index = index + 1;
-                }
-                image.eq(index).show();
-                image.eq(index).css('left', '-100px');
-                image.eq(index).animate(
-                    {
-                        left : 0,
-                        opacity: 1
-                    }
-                )
-                counter.html(index);
-            }
-        );
-    })
-});
+//     $('#next1').click(function(){
+//         image.eq(index).animate(
+//             {
+//                 left : '100px',
+//                 opacity: 0
+//             },
+//             function(){
+//                 image.eq(index).hide();
+//                 if(index == len - 1){
+//                     index = 0;
+//                 }
+//                 else{
+//                     index = index + 1;
+//                 }
+//                 image.eq(index).show();
+//                 image.eq(index).css('left', '-100px');
+//                 image.eq(index).animate(
+//                     {
+//                         left : 0,
+//                         opacity: 1
+//                     }
+//                 )
+//                 counter.html(index);
+//             }
+//         );
+//     })
+// });

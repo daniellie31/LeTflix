@@ -199,7 +199,7 @@ header{
     transition: transform .2s;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    /* position: relative; */
 }
 
 .movie-pict img:hover{
