@@ -5,6 +5,7 @@ function runAllFunction(){
     validatePlan();
     validateAgreement();
     if(validateEmail() && validatePassword() && validateGender() && validatePlan() && validateAgreement()){
+        alert("Your data has been submitted, Thank You!");
         document.getElementById('form').reset();
     }
 }
