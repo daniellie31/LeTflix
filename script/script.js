@@ -110,6 +110,15 @@ const openMenu = document.querySelector('.openMenu');
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
+function show(){
+    menu.style.display = 'flex';
+    menu.style.top = '0';
+}
+function close(){
+    menu.style.top = '-100%';
+}
+
+
 // $(document).ready(function(){
 //     let len = $('.image').length;
 //     let counter = $('#counter');
