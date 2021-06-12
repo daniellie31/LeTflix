@@ -343,7 +343,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .left-career img{
@@ -426,6 +425,88 @@ footer p{
     width: 30px;
     height: 30px;
 }
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+    .header-right{
+        font-size: 12px;
+    }
+
+    .about-us-desc{
+        height: 100%;
+        padding-bottom: 5%;
+    }
+
+    .left-content{
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .left-content p{
+        font-size: 12px;
+    }
+    
+    .right-container, .left-container{
+        width: 50%;
+    }
+
+    .right-container{
+        padding-top: 5%;
+    }
+
+    .right-container h3{
+        font-size: 14px;
+    }
+
+    .logo, .logo img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .our-teams, .our-teams-container{
+        height: 100%;
+        width: 100%;
+        /* background-color: #F2BF57; */
+    }
+
+    .company-culture{
+        width: 100%;
+        height: 100%;
+        /* background-color: aquamarine; */
+        padding: 4% 0;
+    }
+
+    
+    .left-culture{
+        height: 100%;
+        /* background-color: #F2BF57; */
+        padding-left: 4%;
+    }
+
+    .left-culture p{
+        font-size: 14px;
+    }
+
+    .right-culture img, .left-career img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .company-career{
+        height: 100%;
+        padding: 2% 0;
+    }
+
+    .right-career{
+        height: 100%;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 670px) {
+
+}
+
 
 
 
