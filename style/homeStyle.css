@@ -242,7 +242,7 @@ button:hover{
 }
 
 /* HP */
-@media all and (max-width: 670px){
+@media all and (max-width: 500px){
     .benefit-container{
         margin: 70px 30px;
     }
