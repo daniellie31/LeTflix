@@ -30,16 +30,13 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin-right: 38px;
-    /* background-color: aqua; */
 }
 
 .header-right ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    /* padding: 0; */
     width: 100%;
-    /* background-color: rebeccapurple; */
 }
 
 .header-right ul li ul {
@@ -67,11 +64,9 @@ header{
 
 .header-right ul li ul li:hover{
     background-color: #242830;
-    /* color: #F2BF57; */
 }
 
 .header-right ul li ul li a:hover{
-    /* background-color: #242830; */
     color: #FFFFFF;
     font-weight: normal;
 }
@@ -103,13 +98,10 @@ header{
 }
 
 .header-right .nav-login, .header-right .nav-register{
-    /* background-color: #F2BF57; */
     color: #F2BF57;
-    /* width: 72px; */
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
-    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header-right .nav-login:hover, .header-right .nav-register:hover{
@@ -153,8 +145,6 @@ header{
     line-height: 50px;
     border-radius: 10px;
     font-size: 18px;
-    /* box-shadow: 3px 3px black; */
-    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25)); */
     transition: transform 0.2s;
 }
 
@@ -181,7 +171,6 @@ header{
 
 .content-container{
     text-align: center;
-    /* width: 100%; */
 }
 
 .movie-pict{
@@ -199,7 +188,6 @@ header{
     transition: transform .2s;
     background-size: cover;
     background-repeat: no-repeat;
-    /* position: relative; */
 }
 
 .movie-pict img:hover{
@@ -256,8 +244,6 @@ footer p{
         margin-top: 0;
         padding-top: 40px;
         padding-bottom: 40px;
-        /* width: 100%; */
-        /* background-color: red; */
     }
 
     #mc-kedua{
@@ -304,9 +290,44 @@ footer p{
     .footer-right{
         margin:0;
     }
-
 }
 
+/* TABLET */
+@media screen and (max-width: 900px) {
+    .header-right{
+        font-size: 12px;
+    }
 
+    .upper-content{
+        display: flex;
+        align-items: center;
+    }
 
+    .benefit-container{
+        margin: 3%;
+    }
 
+    .lower-content{
+        height: 100%;
+        padding-bottom: 4%;
+    }
+    
+    .movie-container{
+        width: 100%;
+    }
+
+    .movie-pict{
+        width: 100%;
+        align-items: center;
+    }
+
+    .movie-pict img{
+        height: 100px;
+        width: 150px;
+    }
+
+    #next, #previous{
+        height: 30px;
+        width: 40px;
+    }
+}
