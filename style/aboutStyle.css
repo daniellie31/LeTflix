@@ -30,16 +30,13 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin-right: 38px;
-    /* background-color: aqua; */
 }
 
 .header-right ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    /* padding: 0; */
     width: 100%;
-    /* background-color: rebeccapurple; */
 }
 
 .header-right ul li ul {
@@ -67,11 +64,9 @@ header{
 
 .header-right ul li ul li:hover{
     background-color: #242830;
-    /* color: #F2BF57; */
 }
 
 .header-right ul li ul li a:hover{
-    /* background-color: #242830; */
     color: #FFFFFF;
     font-weight: normal;
 }
@@ -103,13 +98,10 @@ header{
 }
 
 .header-right .nav-login, .header-right .nav-register{
-    /* background-color: #F2BF57; */
     color: #F2BF57;
-    /* width: 72px; */
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
-    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header-right .nav-login:hover, .header-right .nav-register:hover{
@@ -123,7 +115,6 @@ header{
 }
 
 .left-container{
-    /* background-color: blue; */
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -137,7 +128,6 @@ header{
 }
 
 .right-container{
-    /* background-color: #F2BF57; */
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -158,9 +148,7 @@ header{
     background-color: #303542;
     height: 200px;
     width: 200px;
-    /* margin-top: 100px; */
     border-radius: 40px;
-    /* filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25)); */
     box-shadow: 3px 3px black;
     margin-bottom: 10px;
 }
@@ -181,9 +169,7 @@ header{
 }
 
 .our-teams-container{
-    /* background-color: rebeccapurple; */
     width: 1200px;
-    /* height: 400px; */
 }
 
 .list-members{
@@ -232,34 +218,26 @@ header{
 }
 
 .company-culture h1{
-    /* background-color: white; */
     text-align: end;
-    /* padding-right: 120px; */
     margin: 0 140px;
 }
 
 .culture-content{
-    /* background-color: #F2BF57; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px;
-    /* height: 1400px; */
 }
 
 .left-culture{
-    /* background-color: red; */
     width: 50%;
     height: 380px;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    /* margin-left: 10px; */
 }
 
 .left-culture-content{
-    /* background-color: #EF6E72; */
     width: 460px;
     color: #FFFFFF;
 }
@@ -281,17 +259,13 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: blue; */
-
 }
 
 .right-culture img{
-    /* background-color: #EF6E72; */
     width: 500px;
     height: 400px;
 }
 
-/* mulai dari sini */
 .company-career{
     background-color: #242830;
     height: 500px;
@@ -299,7 +273,6 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 
 .company-career h1{
     text-align: start;
@@ -360,7 +333,6 @@ header{
 }
 
 .company-investor img{
-    /* background-color: green; */
     width: 250px;
 }
 
@@ -368,7 +340,6 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin: 40px 0;
-
 }
 
 .bottom-investor-container{
@@ -391,7 +362,6 @@ header{
 }
 
 .bottom-investor{
-    /* background-color: green; */
     margin: 0 -140px;
 }
 
@@ -466,20 +436,16 @@ footer p{
     .our-teams, .our-teams-container{
         height: 100%;
         width: 100%;
-        /* background-color: #F2BF57; */
     }
 
     .company-culture{
         width: 100%;
         height: 100%;
-        /* background-color: aquamarine; */
         padding: 4% 0;
     }
 
-    
     .left-culture{
         height: 100%;
-        /* background-color: #F2BF57; */
         padding-left: 4%;
     }
 
@@ -503,11 +469,125 @@ footer p{
 }
 
 /* HP */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 500px) {
+    .header-right{
+        display: none;
+    }
 
+    .right-container{
+        display: none;
+    }
+
+    .about-us-desc, .company-culture, .company-career, .center-investor{
+        height: 100%;
+    }
+
+    .left-container{
+        width: 100%;
+        height: 300px;
+        padding-top: 20px;
+    }
+
+    .left-content{
+        padding: 10px 0;
+        width: 340px;
+    }
+
+    .list-members{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .company-culture h1{
+        text-align: center;
+        margin: 0;
+    }
+    
+    .culture-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .left-culture, .left-career{
+        width: 100%;
+    }
+    
+    .left-culture-content{
+        width: 50%;
+    }
+    
+    .list-content p{
+        font-size: 14px;
+    }
+
+    .company-career h1{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .career-content{
+        flex-direction: column;
+    }
+
+    .right-career{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-culture img, .left-career img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .company-investor{
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
+
+    .top-investor-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-investor{
+        margin: 3px;
+    }
+
+    .top-investor img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .center-investor img{
+        height: 100px;
+        width: 300px;
+    }
+
+    .bottom-investor-container{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .bottom-investor img{
+        height: 200px;
+        width: 260px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    footer-left, .header-left, .footer-right{
+        margin: 0;
+    }
+
+    footer p{
+        margin: 10px 0;
+    }
 }
-
-
-
-
-

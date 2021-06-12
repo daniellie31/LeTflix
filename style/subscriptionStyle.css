@@ -308,7 +308,8 @@ footer p{
     .container{
         height: 100%;
     }
-    .left-container{
+
+    .left-container, .right-container{
         width: 50%;
     }
     
@@ -326,10 +327,6 @@ footer p{
         height: 300px;
     }
 
-    .right-container{
-        width: 50%;
-    }
-
     .form-title h2{
         font-size: 30px;
     }
@@ -344,7 +341,7 @@ footer p{
 }
 
 /* HP  */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 500px) {
     .container{
         flex-direction: column;
     }
@@ -353,7 +350,7 @@ footer p{
         width: 100%;
     }
 
-    .left-container{
+    .left-container, .header-right{
         display: none;
     }
 
@@ -380,19 +377,11 @@ footer p{
         padding: 20px 0;
     }
 
-    footer-left, .header-left{
+    footer-left, .header-left, .footer-right{
         margin: 0;
     }
 
     footer p{
         margin: 10px 0;
-    }
-
-    .footer-right{
-        margin:0;
-    }
-
-    .header-right{
-        display: none;
     }
 }
