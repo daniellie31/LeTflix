@@ -230,6 +230,17 @@ footer p{
     height: 30px;
 }
 
+button{
+    background-color: #303542;
+    border: none;
+    transition: transform .2s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 /* HP */
 @media all and (max-width: 670px){
     .benefit-container{
