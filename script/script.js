@@ -100,6 +100,16 @@ function validateAgreement(){
     return true;
 }
 
+const menu = document.querySelector('.menu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
 // $(document).ready(function(){
 //     let len = $('.image').length;
 //     let counter = $('#counter');
