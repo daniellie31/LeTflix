@@ -317,7 +317,7 @@ button:hover{
     .drama-list:hover{
         background: none;
         color: #FFFFFF;
-        font-size: 1.3rem;
+        font-size: 1.0rem;
         transition: .2s ease;
     }
 
@@ -333,7 +333,7 @@ button:hover{
     .header-right ul li a:hover {
         background: none;
         color: #FFFFFF;
-        font-size: 1.6rem;
+        font-size: 1.1rem;
         transition: .2s ease;
     }
 
