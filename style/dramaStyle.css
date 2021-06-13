@@ -103,11 +103,36 @@ header{
 }
 
 .upper-content{
-    background-color: red;
+    background-color: #242830;
     height: 600px;
-    background: url('../assets/1-96.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+} 
+
+.header-drama{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+
+.prev-upper, .next-upper{
+    
+    margin-top: 250px;
+    cursor: pointer;
+}
+
+.prev-upper{
+    position: absolute;
+    float: left;
+    padding-left: 15px;
+    margin-right: -45px;
+    z-index: 100;
+}
+
+.next-upper{
+    position: absolute;
+    float: right;
+    padding-right: 15px;
+    margin-left: -45px;
+    z-index: 100;
 }
 
 .header-drama img{
