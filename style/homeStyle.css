@@ -186,8 +186,8 @@ header{
     width: 270px;
     height: 160px;
     transition: transform .2s;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
 }
 
 .movie-pict img:hover{
@@ -246,50 +246,40 @@ button:hover{
     display: none;
     cursor: pointer;
 }
+
 .header-right .closeMenu , .icons i {
     font-size: 2rem;
     display: none;
     cursor: pointer;
 }
 
+/* HP  */
 @media all and (max-width: 500px){
-    .benefit-container{
-        margin: 70px 30px;
+    .benefit-container h1{
+        font-size: 40px;
+    }
+
+    .benefit-container p{
+        font-size: 13px;
     }
 
     .benefit-container a{
         width: 100%;
-    }
-
-    .movie-container{
-        margin-top: 0;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        /* width: 100%; */
-        /* background-color: red; */
-    }
-
-    #mc-kedua{
-        padding-top: 5px;
-    }
-
-    .movie-container h4{
-        text-align: center;
+        font-size: 16px;
     }
 
     .movie-pict{
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 100%;
     }
-
     .movie-pict img{
         margin: 5px 0;
     }
 
-    .lower-content{
-        height: auto;
+    .movie-container h4{
+        text-align: center;
+        font-size: 20px;
     }
 
     footer{
@@ -299,7 +289,6 @@ button:hover{
     }
 
     .header-right ul {
-        /* height: 100vh; */
         position: fixed;
         top: 0;
         right: 0;
@@ -327,9 +316,11 @@ button:hover{
         top: 20px;
         right: 20px;
     }
+
     .header-right .openMenu{
         display: block;
     }
+
     .header-right ul li a:hover {
         background: none;
         color: #FFFFFF;
@@ -339,7 +330,6 @@ button:hover{
 
     .header-right{
         justify-content: flex-end;
-        /* background-color: aqua; */
         height: 100%;
     }
 
@@ -367,7 +357,6 @@ button:hover{
         text-align: center;
     }
 
-
     .footer-left, .header-left{
         margin: 0;
     }
@@ -379,7 +368,6 @@ button:hover{
     .footer-right{
         margin:0;
     }
-
 }
 
 /* TABLET */
@@ -395,6 +383,10 @@ button:hover{
 
     .benefit-container{
         margin: 3%;
+    }
+
+    .benefit-container a{
+        width: 100%;
     }
 
     .lower-content{

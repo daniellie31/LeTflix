@@ -259,10 +259,87 @@ footer p{
     height: 30px;
 }
 
+.header-right .openMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.header-right .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
 /* HP  */
 @media screen and (max-width: 500px) {
-    .header-right{
+    .header-right ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #303542;
+        transition: top 1s ease;
+        padding: 0;
         display: none;
+    }
+
+    .drama-list:hover{
+        background: none;
+        color: #FFFFFF;
+        font-size: 1.0rem;
+        transition: .2s ease;
+    }
+
+    .header-right ul .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .header-right .openMenu{
+        display: block;
+    }
+
+    .header-right ul li a:hover {
+        background: none;
+        color: #FFFFFF;
+        font-size: 1.1rem;
+        transition: .2s ease;
+    }
+
+    .header-right{
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    i{
+        color: #EF6E72;
+    }
+
+    .header-right ul li ul {
+        display: none;
+        margin-top: 15px;
+        position: static;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-right ul li{
+        padding: 18px 0;
+        width: 100%;
+        text-align: center;
     }
 
     footer{

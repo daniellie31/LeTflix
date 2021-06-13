@@ -13,7 +13,6 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color: #303542;
-    /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25); */
 }
 
 .header-left, .footer-left{
@@ -30,16 +29,13 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin-right: 38px;
-    /* background-color: aqua; */
 }
 
 .header-right ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    /* padding: 0; */
     width: 100%;
-    /* background-color: rebeccapurple; */
 }
 
 .header-right ul li ul {
@@ -67,11 +63,9 @@ header{
 
 .header-right ul li ul li:hover{
     background-color: #242830;
-    /* color: #F2BF57; */
 }
 
 .header-right ul li ul li a:hover{
-    /* background-color: #242830; */
     color: #FFFFFF;
     font-weight: normal;
 }
@@ -102,13 +96,10 @@ header{
 }
 
 .header-right .nav-login, .header-right .nav-register{
-    /* background-color: #F2BF57; */
     color: #F2BF57;
-    /* width: 72px; */
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
-    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header-right .nav-login:hover, .header-right .nav-register:hover{
@@ -135,7 +126,6 @@ header{
     width: 300px;
     margin-top: 100px;
     border-radius: 40px;
-    /* filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25)); */
     box-shadow: 3px 3px black;
 }
 
@@ -155,7 +145,6 @@ header{
     background-color: #303542;
     display: flex;
     justify-content: center;
-    /* background-color: green; */
 }
 
 .subscribe-now{
@@ -184,7 +173,6 @@ header{
     color: #F2BF57;
     font-weight: normal;
     font-size: 12px;
-    /* background-color: #EF6E72; */
     width: 100%;
 }
 
@@ -193,7 +181,6 @@ header{
     margin: 80px 0 50px 0;
     width: 300px;
     color: #EF6E72;
-    /* background-color: #303542; */
 }
 
 .form-title h2{
@@ -210,7 +197,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    /* background-color: red; */
     width: 300px;
 }
 
@@ -232,7 +218,6 @@ header{
     background-color: #EFE2E2;
     color: #787C87;
     font-weight: bold;
-    /* background-color: red; */
 }
 
 .email-container img, .password-container img{
@@ -252,7 +237,6 @@ header{
 .gender{
     display: flex;
     width: 100%;
-    /* background-color: red; */
 }
 
 .gender .male, .female{
@@ -299,6 +283,18 @@ footer p{
     height: 30px;
 }
 
+.header-right .openMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.header-right .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
 /* Tablet */
 @media screen and (max-width: 900px) {
     .header-right{
@@ -338,10 +334,84 @@ footer p{
     .form-content{
         font-size: 14px;
     }
+
+    footer{
+        height: 170px;
+    }
+
 }
 
 /* HP  */
 @media screen and (max-width: 500px) {
+    .header-right ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #303542;
+        transition: top 1s ease;
+        padding: 0;
+        display: none;
+    }
+
+    .drama-list:hover{
+        background: none;
+        color: #FFFFFF;
+        font-size: 1.0rem;
+        transition: .2s ease;
+    }
+
+    .header-right ul .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .header-right .openMenu{
+        display: block;
+    }
+    
+    .header-right ul li a:hover {
+        background: none;
+        color: #FFFFFF;
+        font-size: 1.1rem;
+        transition: .2s ease;
+    }
+
+    .header-right{
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    i{
+        color: #EF6E72;
+    }
+
+    .header-right ul li ul {
+        display: none;
+        margin-top: 15px;
+        position: static;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-right ul li{
+        padding: 18px 0;
+        width: 100%;
+        text-align: center;
+    }
+
     .container{
         flex-direction: column;
     }
@@ -350,7 +420,7 @@ footer p{
         width: 100%;
     }
 
-    .left-container, .header-right{
+    .left-container{
         display: none;
     }
 

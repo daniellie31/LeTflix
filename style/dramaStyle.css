@@ -30,16 +30,13 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin-right: 38px;
-    /* background-color: aqua; */
 }
 
 .header-right ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    /* padding: 0; */
     width: 100%;
-    /* background-color: rebeccapurple; */
 }
 
 .header-right ul li ul {
@@ -67,11 +64,9 @@ header{
 
 .header-right ul li ul li:hover{
     background-color: #242830;
-    /* color: #F2BF57; */
 }
 
 .header-right ul li ul li a:hover{
-    /* background-color: #242830; */
     color: #FFFFFF;
     font-weight: normal;
 }
@@ -97,13 +92,10 @@ header{
 }
 
 .header-right .nav-login, .header-right .nav-register{
-    /* background-color: #F2BF57; */
     color: #F2BF57;
-    /* width: 72px; */
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
-    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header-right .nav-login:hover, .header-right .nav-register:hover{
@@ -111,11 +103,8 @@ header{
 }
 
 .upper-content{
-    /* margin-top: 15px; */
     background-color: red;
-    /* background-size: auto;  */
     height: 600px;
-    /* width: 1024px; */
     background: url('../assets/1-96.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -305,6 +294,7 @@ button:hover{
     .content-container{
         padding-bottom: 30px;
     }
+
     .lower-content{
         height: 100%;
     }
@@ -312,9 +302,7 @@ button:hover{
 
 /* HP */
 @media all and (max-width: 500px){
-    
     .header-right ul {
-        /* height: 100vh; */
         position: fixed;
         top: 0;
         right: 0;
@@ -342,9 +330,11 @@ button:hover{
         top: 20px;
         right: 20px;
     }
+
     .header-right .openMenu{
         display: block;
     }
+
     .header-right ul li a:hover {
         background: none;
         color: #FFFFFF;
@@ -354,7 +344,6 @@ button:hover{
 
     .header-right{
         justify-content: flex-end;
-        /* background-color: aqua; */
         height: 100%;
     }
 
@@ -382,7 +371,6 @@ button:hover{
         text-align: center;
     }
 
-    
     .search-container{
         margin: 0 0 0 70px;
     }
