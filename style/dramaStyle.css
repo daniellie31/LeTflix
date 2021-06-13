@@ -381,6 +381,10 @@ button:hover{
         color: #EF6E72;
     }
 
+    .search-btn a i{
+        color: black;
+    }
+    
     .header-right ul li ul {
         display: none;
         margin-top: 15px;
